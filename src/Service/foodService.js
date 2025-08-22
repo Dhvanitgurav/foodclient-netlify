@@ -1,5 +1,5 @@
 import axios from "axios";
-const API_URL='http://localhost:8080/api/foods';
+const API_URL='https://foodrestapi-production-71b1.up.railway.app/api/foods';
 export const fetchFoodList =  async() =>{ 
 try{
   const response= await axios.get(API_URL);
