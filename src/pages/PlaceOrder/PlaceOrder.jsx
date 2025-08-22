@@ -35,7 +35,7 @@ const PlaceOrder = () => {
 
   const clearCart = async () => {
     try {
-      await axios.delete('https://foodrestapi-production-71b1.up.railway.app/api/cart/clear', {
+      await axios.delete('https://foodrestapi-production-5593.up.railway.app/api/cart/clear', {
         headers: { Authorization: `Bearer ${token}` }
       });
       setQuantities({});
@@ -46,7 +46,7 @@ const PlaceOrder = () => {
 
   const deleteOrder = async (orderId) => {
     try {
-      await axios.delete(`https://foodrestapi-production-71b1.up.railway.app/api/orders/${orderId}`, {
+      await axios.delete(`https://foodrestapi-production-5593.up.railway.app/api/orders/${orderId}`, {
         headers: { Authorization: `Bearer ${token}` }
       });
     } catch (error) {
@@ -77,7 +77,7 @@ const PlaceOrder = () => {
     try {
       // 1️⃣ Create order in backend
       const response = await axios.post(
-        'https://foodrestapi-production-71b1.up.railway.app/api/orders/create',
+        'https://foodrestapi-production-5593.up.railway.app/api/orders/create',
         orderData,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -87,7 +87,7 @@ const PlaceOrder = () => {
 
         // 2️⃣ Create Stripe Checkout session
         const sessionResponse = await axios.post(
-          "https://foodrestapi-production-71b1.up.railway.app/api/payment/create-checkout-session",
+          "https://foodrestapi-production-5593.up.railway.app/api/payment/create-checkout-session",
           { orderId, amount: orderData.amount },
           { headers: { Authorization: `Bearer ${token}` } }
         );

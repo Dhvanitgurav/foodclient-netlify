@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL="https://foodrestapi-production-71b1.up.railway.app/api";
+const API_URL="https://foodrestapi-production-5593.up.railway.app/api";
 export const registerUser = async (data) =>{
 try{
 

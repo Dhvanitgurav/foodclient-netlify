@@ -16,7 +16,7 @@ const [formData, setFormData] = useState({
   const onSubmitHandler = async (e) => {
 e.preventDefault();
 try {
-  const response= await axios.post('https://foodrestapi-production-71b1.up.railway.app/api/contact', formData);
+  const response= await axios.post('https://foodrestapi-production-5593.up.railway.app/api/contact', formData);
  
 
 toast.success('Message sent successfully');

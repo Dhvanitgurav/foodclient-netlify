@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL="https://foodrestapi-production-71b1.up.railway.app/api/cart";
+const API_URL="https://foodrestapi-production-5593.up.railway.app/api/cart";
 export const  addToCart = async(foodId, token) =>{
     try{
 await axios.post(API_URL, {foodId}, {headers: {"Authorization": `Bearer ${token}`}});

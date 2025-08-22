@@ -9,7 +9,7 @@ const MyOrders = () => {
 
 
    const fetchOrders = async () =>{
-const response=await axios.get('https://foodrestapi-production-71b1.up.railway.app/api/orders', {headers: {'Authorization': `Bearer ${token}`}});
+const response=await axios.get('https://foodrestapi-production-5593.up.railway.app/api/orders', {headers: {'Authorization': `Bearer ${token}`}});
 setData(response.data);
    };
 

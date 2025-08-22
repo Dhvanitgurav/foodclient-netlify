@@ -21,7 +21,7 @@ const PaymentSuccess = () => {
     const verifyPayment = async () => {
       try {
         const res = await axios.get(
-          `https://foodrestapi-production-71b1.up.railway.app/api/payment/verify-session`,
+          `https://foodrestapi-production-5593.up.railway.app/api/payment/verify-session`,
           {
             params: { sessionId }, // replace "me" with actual userId if needed
             headers: { Authorization: `Bearer ${token}` }
