@@ -1,0 +1,9 @@
+/* Reduce header space */
+
+
+/* Pull container higher */
+.place-order-page .container {
+  margin-top: 0.1rem !important;
+}
+
+/* Slightly compact form spacing */

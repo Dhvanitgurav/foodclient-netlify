@@ -1,0 +1,42 @@
+.explore-menu-list::-webkit-scrollbar{
+display: none;
+}
+.explore-menu-list{
+    scrollbar-width: none;
+}
+.explore-menu-list img{
+    cursor: pointer;
+}
+
+.explore-menu-list-item p{
+    color: #747474;
+    cursor: pointer;
+}
+.scroll-icon{
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #747474;
+    transition: color 0.2s;
+    
+}
+.scroll-icon:hover{
+    color: tomato;
+}
+.rounded-circle {
+  border-radius: 50%;
+}
+
+.rounded-circle-active {
+  border: 3px solid tomato;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: rgba(255, 99, 71, 0.1); /* soft tomato glow */
+  box-shadow: 0 4px 12px rgba(255, 99, 71, 0.2);
+  transition: all 0.3s ease;
+}
+
+
+
+
+
